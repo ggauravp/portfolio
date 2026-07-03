@@ -24,6 +24,24 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(section);
   });
 
+  // Mobile menu toggle
+  var menuToggle = document.getElementById('mobile-menu-button');
+  var mobileMenu = document.getElementById('mobile-menu');
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', function () {
+      var isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileMenu.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
   // Contact form submission using Fetch API
   var form = document.getElementById('contact-form');
   if (form) {

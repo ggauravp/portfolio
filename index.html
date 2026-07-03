@@ -117,12 +117,22 @@
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 duration-200" href="#projects">Projects</a>
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 duration-200" href="#experience">Experience</a>
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 duration-200" href="#contact">Contact</a>
-<a class="bg-primary text-on-primary-container px-6 py-2.5 rounded-lg font-bold hover:scale-105 transition-transform duration-200 active:scale-95" href="#">Resume</a>
+<a class="bg-primary text-on-primary-container px-6 py-2.5 rounded-lg font-bold hover:scale-105 transition-transform duration-200 active:scale-95" href="resume/GauravPantResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 </div>
 <!-- Mobile Menu Toggle (Simplified) -->
-<button class="md:hidden text-primary">
+<button id="mobile-menu-button" class="md:hidden text-primary" aria-expanded="false" aria-controls="mobile-menu">
 <span class="material-symbols-outlined">menu</span>
 </button>
+</div>
+<div id="mobile-menu" class="md:hidden hidden absolute inset-x-0 top-full bg-surface/95 backdrop-blur-xl border-b border-white/10 shadow-sm z-40">
+  <div class="flex flex-col gap-4 px-6 py-6">
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 duration-200" href="#about">About</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 duration-200" href="#skills">Skills</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 duration-200" href="#projects">Projects</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 duration-200" href="#experience">Experience</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 duration-200" href="#contact">Contact</a>
+    <a class="bg-primary text-on-primary-container px-6 py-2.5 rounded-lg font-bold hover:scale-105 transition-transform duration-200 active:scale-95 text-center" href="resume/GauravPantResume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+  </div>
 </div>
 </nav>
 <main class="gradient-mesh">
@@ -139,7 +149,7 @@
 <a class="bg-primary text-on-primary-container px-8 py-4 rounded-lg font-bold flex items-center gap-2 hover:scale-105 transition-all duration-200 shadow-lg shadow-primary/10" href="#projects">
                             View Projects <span class="material-symbols-outlined">arrow_forward</span>
 </a>
-<a class="border border-outline-variant text-on-surface hover:bg-white/5 px-8 py-4 rounded-lg font-bold transition-all duration-200" href="#">
+<a class="border border-outline-variant text-on-surface hover:bg-white/5 px-8 py-4 rounded-lg font-bold transition-all duration-200" href="resume/GauravPantResume.pdf" download>
                             Download Resume
                         </a>
 </div>
@@ -183,10 +193,10 @@
 </div>
 <div class="lg:col-span-8 glass-card p-10 rounded-2xl">
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
-                        I am a dedicated Computer Science student with a deep-rooted passion for Artificial Intelligence and full-stack web development. My journey began with a curiosity about how data can be transformed into actionable insights, leading me to specialize in Python and the Django ecosystem.
-                    </p>
+I am Computer Engineering Graduate and a passionate Python Backend Developer and Data Engineer. I enjoy building scalable, secure, and user-focused web applications. I primarily work with Django and Django REST Framework, and have Working Experience in building data pipelines using Apache Airflow, AWS MWAA, and Terraform.
+                                           </p>
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                        I thrive in environments that challenge my architectural thinking and technical precision. Whether I'm building complex recommendation engines or optimizing backend REST APIs, I focus on creating scalable, user-centric solutions that bridge the gap between complex algorithms and intuitive user interfaces.
+                        I have experience implementing CI/CD pipelines with GitHub Actions to automate testing, code quality checks, and deployment workflows, enabling faster and more reliable software delivery.
                     </p>
 </div>
 </div>
@@ -267,15 +277,17 @@
 </div>
 <div class="p-6 flex-grow">
 <div class="flex gap-2 mb-4">
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Python</span>
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">AI</span>
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Flask</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Aws</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Terraform</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">mwaa</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">iam roles</span>
+
 </div>
-<h3 class="font-display text-headline-md text-on-surface mb-3">Movie Recommendation System</h3>
-<p class="font-body-md text-on-surface-variant mb-8">An intelligent engine that predicts user preferences using collaborative filtering and content-based algorithms.</p>
+<h3 class="font-display text-headline-md text-on-surface mb-3">Terraform MWAA</h3>
+<p class="font-body-md text-on-surface-variant mb-8">Terraform-based AWS MWAA data pipeline with S3 for DAGs and data storage, Lambda for event-driven processing, and PostgreSQL on EC2, secured using IAM roles and security groups.</p>
 <div class="flex gap-3 mt-auto">
 <a class="flex-1 bg-primary text-on-primary-container py-2.5 rounded-md font-semibold text-center hover:bg-primary/90 transition-colors" href="#">Live Demo</a>
-<a class="flex-1 border border-outline-variant py-2.5 rounded-md font-semibold text-center hover:bg-white/5 transition-colors" href="#">GitHub</a>
+<a class="flex-1 border border-outline-variant py-2.5 rounded-md font-semibold text-center hover:bg-white/5 transition-colors" href="https://github.com/ggauravp/Terraform_MWAA">GitHub</a>
 </div>
 </div>
 </div>
@@ -283,19 +295,19 @@
 <div class="glass-card rounded-2xl overflow-hidden flex flex-col group">
 <div class="h-48 relative overflow-hidden">
 <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent z-10"></div>
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek digital travel dashboard displaying various exotic global destinations. The interface is dark-themed with high-contrast, beautiful landscape photos of snowy mountains and tropical beaches. Interactive map markers and recommendation cards are shown with glassmorphic styling and emerald green accents. The overall atmosphere is inspirational, sophisticated, and technologically advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa84saY4hM_HUuOJzu5NYcAlzp-IBZh79YiikxF885o20k7LUpFfz2EyCcRYYodpbeWIJ-OY6xSFzz2aWfVhQ9DfTon4lPjKsVLg985gCYZfj4EQVTeo8xxyfOnbnQK_AQ-8iSO_olEpgWGxd46FCf39E-mn8b8VrnuTXwOE0wmp7FlTMxfFhDMlZTWfGCkdGwc-Fdg2AGlsMFvsHzmQFy2udMr01IUQ7XWPDHGiVK6el71FruZXjby1NvfN4uQ4HHyihwRh98Is0"/>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A mobile app interface design for a trekking assistant. It shows a real-time topographic map, altitude data, and a weather forecast widget. The design uses a deep charcoal background with glowing emerald path lines. Glassmorphic cards overlay the map, showing trip duration and gear checklists. The style is rugged yet high-tech, perfect for professional outdoor enthusiasts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRxVlI6sZ2JgiVgkaZZstNItJzY4yk0iMtyEprZACX6MyMkvGDdcyYu4QtS1O1GALy9jm9p0jQlZJFcp9nEUygIQVH9v52JSB3R6nMp4gDQSl_a8Di0Mcthk66NEK0lH7wVuKayBPgIDkAhpyiIZY79MT6yCxgehbeIyivfyRao9o6xVzebnIw8i7EN9W90SFzy5hoXhy6fQ8qtIOGxw6nydfbUqtQ8oOTKJ42M58F4XP2ibH9WSe1fymbbp34JAqGYXEJHPNLkNM"/>
 </div>
 <div class="p-6 flex-grow">
 <div class="flex gap-2 mb-4">
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Django</span>
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">PostgreSQL</span>
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">AI</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Drf</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Postgresql</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">jwt, google oauth</span>
 </div>
-<h3 class="font-display text-headline-md text-on-surface mb-3">Travel Destination System</h3>
-<p class="font-body-md text-on-surface-variant mb-8">Personalized travel curating platform utilizing geo-spatial data and user behavioral patterns to suggest the next trip.</p>
+<h3 class="font-display text-headline-md text-on-surface mb-3">Travel assist platform</h3>
+<p class="font-body-md text-on-surface-variant mb-8">Travel assist platform that helps Travellers to book hotels, guides, and activities for seamless travel experiences with secure authentication using JWT and Google OAuth.</p>
 <div class="flex gap-3 mt-auto">
 <a class="flex-1 bg-primary text-on-primary-container py-2.5 rounded-md font-semibold text-center hover:bg-primary/90 transition-colors" href="#">Live Demo</a>
-<a class="flex-1 border border-outline-variant py-2.5 rounded-md font-semibold text-center hover:bg-white/5 transition-colors" href="#">GitHub</a>
+<a class="flex-1 border border-outline-variant py-2.5 rounded-md font-semibold text-center hover:bg-white/5 transition-colors" href="https://github.com/tourist-rental-website/django-backend">GitHub</a>
 </div>
 </div>
 </div>
@@ -307,15 +319,15 @@
 </div>
 <div class="p-6 flex-grow">
 <div class="flex gap-2 mb-4">
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Python</span>
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Mobile</span>
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">MapBox</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Django channels</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Web Sockets</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">WebRTC</span>
 </div>
-<h3 class="font-display text-headline-md text-on-surface mb-3">Travel &amp; Trek Assist App</h3>
-<p class="font-body-md text-on-surface-variant mb-8">Real-time trekking assistant with offline maps, elevation tracking, and weather predictive modules for safer expeditions.</p>
+<h3 class="font-display text-headline-md text-on-surface mb-3">Chat App </h3>
+<p class="font-body-md text-on-surface-variant mb-8">Real-time messaging platform using websockets and django channels with Redis as message broker, with integrated video call functionality using WebRTC for seamless communication between users.</p>
 <div class="flex gap-3 mt-auto">
 <a class="flex-1 bg-primary text-on-primary-container py-2.5 rounded-md font-semibold text-center hover:bg-primary/90 transition-colors" href="#">Live Demo</a>
-<a class="flex-1 border border-outline-variant py-2.5 rounded-md font-semibold text-center hover:bg-white/5 transition-colors" href="#">GitHub</a>
+<a class="flex-1 border border-outline-variant py-2.5 rounded-md font-semibold text-center hover:bg-white/5 transition-colors" href="https://github.com/ggauravp/Chat-App">GitHub</a>
 </div>
 </div>
 </div>
@@ -328,14 +340,14 @@
 <div class="p-6 flex-grow">
 <div class="flex gap-2 mb-4">
 <span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">NLP</span>
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">TensorFlow</span>
-<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">Django</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">crawler</span>
+<span class="skill-chip px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase">celery</span>
 </div>
 <h3 class="font-display text-headline-md text-on-surface mb-3">Job Resume Matching System</h3>
-<p class="font-body-md text-on-surface-variant mb-8">Advanced NLP-driven platform that matches candidates to job descriptions based on semantic similarity and skill depth.</p>
+<p class="font-body-md text-on-surface-variant mb-8">Advanced NLP-driven platform that matches candidates to job descriptions based on semantic similarity and skill depth with crawler and celery integration for extracting live jobs and scheduling tasks.</p>
 <div class="flex gap-3 mt-auto">
-<a class="flex-1 bg-primary text-on-primary-container py-2.5 rounded-md font-semibold text-center hover:bg-primary/90 transition-colors" href="#">Live Demo</a>
-<a class="flex-1 border border-outline-variant py-2.5 rounded-md font-semibold text-center hover:bg-white/5 transition-colors" href="#">GitHub</a>
+<a class="flex-1 bg-primary text-on-primary-container py-2.5 rounded-md font-semibold text-center hover:bg-primary/90 transition-colors" href="">Live Demo</a>
+<a class="flex-1 border border-outline-variant py-2.5 rounded-md font-semibold text-center hover:bg-white/5 transition-colors" href="https://github.com/ggauravp/job_match">GitHub</a>
 </div>
 </div>
 </div>
